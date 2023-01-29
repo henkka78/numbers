@@ -1,0 +1,31 @@
+.slide {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.movable {
+  cursor: move;
+}
+
+.stuck {
+  cursor: not-allowed;
+}
+
+.red {
+  color: white;
+  background-color: red;
+  z-index: 10000;
+}
+.white {
+  color: black;
+  background-color: white;
+  z-index: 10000;
+}

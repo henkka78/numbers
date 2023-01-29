@@ -1,0 +1,14 @@
+<div
+  #root
+  class="slide"
+  [style.top.px]="top"
+  [style.left.px]="left"
+  [ngClass]="{
+    red: _slide.status && _slide.content! % 2 === 0,
+    white: _slide.status && _slide.content! % 2 !== 0,
+    movable: isMovable && _slide.status,
+    stuck: !isMovable && _slide.status
+  }"
+>
+  {{ _slide.status ? this._slide.content : "" }}
+</div>

@@ -1,0 +1,10 @@
+<div class="grid mt-5">
+  <ng-container *ngIf="!this.swapping">
+    <app-slide
+      *ngFor="let slide of slides; trackBy: trackByFn"
+      [slide]="slide"
+      [slides]="slides"
+      (swap)="swap($event)"
+    ></app-slide>
+  </ng-container>
+</div>
